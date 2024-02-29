@@ -1,0 +1,202 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 100vh; /* Hace que el cuerpo ocupe el 100% de la altura de la ventana */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://cdn.pixabay.com/photo/2017/01/24/18/08/books-2006000_1280.png');
+    background-repeat: repeat-x; /* Repite la imagen solo en el eje x */
+    background-size: auto 200px;
+    background-position: center bottom -40px;
+}
+body::after {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://cdn.pixabay.com/photo/2017/01/24/18/08/books-2006000_1280.png') repeat-x;
+    background-size: auto 200px; /* Ajuste específico para la segunda imagen */
+    background-position: left -30px bottom -40px; /* Ajuste específico para la segunda imagen */
+    z-index: -1; /* Coloca la segunda imagen detrás del contenido */
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #333;
+}
+
+.button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out; 
+}
+
+.button-primary {
+    background-color: #db5834;
+}
+
+.button-primary:hover {
+    background-color: #fe7927;
+    transform: scale(1.1);
+}
+
+.button-crear {
+    background-color: #5ae733;
+}
+
+.button-crear:hover {
+    background-color: #84ff2c;
+    transform: scale(1.1);
+}
+
+.button-editar {
+    background-color: #e6b42a;
+}
+
+.button-editar:hover {
+    background-color: #fcb902;
+    transform: scale(1.1);
+}
+
+.button-borrar {
+    background-color: #cf2d01;
+}
+
+.button-borrar:hover {
+    background-color: #fb2121;
+    transform: scale(1.1);
+
+}
+/* LOGIN */
+
+.login-form {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.login-form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.login-form input[type="submit"] {
+    width: 100%;
+    background-color: #db5834;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.2s ease-in-out; 
+}
+
+.login-form input[type="submit"]:hover {
+    background-color: #fe7927;
+    transform: scale(1.1);
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 0 10px rgba(230, 126, 34, 0.7);
+}
+
+/* Estilos para las celdas del encabezado de la tabla */
+table th {
+    background-color: #f2f2f2;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Estilos para las celdas de la tabla */
+table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Estilos alternos para filas */
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+table tr:nth-child(odd) {
+    background-color: #f4f4f4;
+}
+
+table tr:hover td {
+    background-color: #ffcc80; /* Color de fondo más anaranjado al pasar el ratón */
+    transform: scale(1.1);
+}
+
+body.home {
+    display: flex;
+    align-items: flex-start; /* Alinea los elementos al principio (arriba) */
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    background-repeat: repeat-x;
+    background-size: auto 200px;
+    background-position: center bottom -40px;
+}
+
+#wrapper {
+    text-align: center;
+    margin-top: 50px; /* Ajusta la distancia desde la parte superior según sea necesario */
+}
+
+#wrapper2 {
+    text-align: center;
+    margin-top: 50px; /* Ajusta la distancia desde la parte superior según sea necesario */
+}
+
+#cerrarSesion {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+#home {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+}
+#ejemplo {
+    width: auto;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.margenes {
+    margin-left: 5px;
+    margin-right: 5px;
+}
